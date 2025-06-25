@@ -75,17 +75,14 @@ body {
     height: 80%;
     background: var(--primary);
     text-align: center;
+    font-size: 45px;
     transition: all 1s ease-in-out;
     box-shadow: 0 0 5px var(--shadow-color);
     padding: 20px 10px;
     z-index: 1; /* Ensure the letter is behind the envelope initially */
-}
-
-.envelope > .letter > .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--txt-color);
-    text-align: justify;
-    font-size: 9px;
+    display: flex;          /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center;    /* Add this line */
 }
 
 .flap > .envelope::before {
